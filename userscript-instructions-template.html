@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{pageTitle}} - {{heading}}</title>
+  <link rel="icon" type="image/svg+xml" href="/chrome-extension/flag.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: {{{fontFamily}}};
+      background: #0a0a0f;
+      color: #fff;
+      min-height: 100vh;
+      line-height: 1.9;
+      padding: 40px 20px;
+    }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { font-size: 2rem; margin-bottom: 10px; }
+    h2 { font-size: 1.4rem; margin: 30px 0 15px; color: #239F40; }
+    .subtitle { color: #a0a0b0; margin-bottom: 40px; }
+    .back { color: #239F40; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+    .back:hover { text-decoration: underline; }
+    .step { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 24px; margin-bottom: 20px; }
+    .step-number { background: #239F40; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; margin-{{stepMargin}}: 12px; }
+    .step h3 { display: inline; font-size: 1.1rem; }
+    .step p { margin-top: 12px; color: #a0a0b0; }
+    .step a { color: #239F40; }
+    .step a.download-btn { display: inline-block; background: #239F40; color: #fff; padding: 14px 28px; border-radius: 10px; text-decoration: none; font-weight: 600; margin-top: 20px; }
+    .download-btn:hover { background: #1a7a30; }
+    .manager-section { margin-top: 40px; }
+    .note { background: rgba(35,159,64,0.1); border-{{noteBorder}}: 3px solid #239F40; padding: 16px; border-radius: {{noteRadius}}; margin-top: 30px; }
+    .note p { color: #a0a0b0; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="{{homeUrl}}" class="back">{{backText}}</a>
+    <h1>{{pageTitle}}</h1>
+    <p class="subtitle">{{pageSubtitle}}</p>
+
+    <h2>Tampermonkey</h2>
+    <div class="step">
+      <span class="step-number">{{step1Num}}</span>
+      <h3>{{installManager}}</h3>
+      <p>{{{tampermonkeyInstall}}}</p>
+    </div>
+    <div class="step">
+      <span class="step-number">{{step2Num}}</span>
+      <h3>{{installScript}}</h3>
+      <p>{{clickBelow}}</p>
+      <a href="/userscript/restore-iran-flag.user.js" class="download-btn">{{downloadBtn}}</a>
+    </div>
+    <div class="step">
+      <span class="step-number">{{step3Num}}</span>
+      <h3>{{confirm}}</h3>
+      <p>{{tampermonkeyConfirm}}</p>
+    </div>
+
+    <h2>Violentmonkey</h2>
+    <div class="step">
+      <span class="step-number">{{step1Num}}</span>
+      <h3>{{installManager}}</h3>
+      <p>{{{violentmonkeyInstall}}}</p>
+    </div>
+    <div class="step">
+      <span class="step-number">{{step2Num}}</span>
+      <h3>{{installScript}}</h3>
+      <p>{{clickBelow}}</p>
+      <a href="/userscript/restore-iran-flag.user.js" class="download-btn">{{downloadBtn}}</a>
+    </div>
+    <div class="step">
+      <span class="step-number">{{step3Num}}</span>
+      <h3>{{confirm}}</h3>
+      <p>{{violentmonkeyConfirm}}</p>
+    </div>
+
+    <h2>Greasemonkey</h2>
+    <div class="step">
+      <span class="step-number">{{step1Num}}</span>
+      <h3>{{installManager}}</h3>
+      <p>{{{greasemonkeyInstall}}}</p>
+    </div>
+    <div class="step">
+      <span class="step-number">{{step2Num}}</span>
+      <h3>{{installScript}}</h3>
+      <p>{{clickBelow}}</p>
+      <a href="/userscript/restore-iran-flag.user.js" class="download-btn">{{downloadBtn}}</a>
+    </div>
+    <div class="step">
+      <span class="step-number">{{step3Num}}</span>
+      <h3>{{confirm}}</h3>
+      <p>{{greasemonkeyConfirm}}</p>
+    </div>
+
+    <div class="note">
+      <p><strong>{{tipLabel}}</strong> {{tipText}}</p>
+    </div>
+  </div>
+</body>
+</html>

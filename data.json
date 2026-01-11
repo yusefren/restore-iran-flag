@@ -77,6 +77,27 @@
         "step5Num": "5", "step5Title": "Activate", "step5Text": "Open Safari, go to <a href=\"https://x.com\" target=\"_blank\">x.com</a> or <a href=\"https://twitter.com\" target=\"_blank\">twitter.com</a>. Tap the puzzle icon in the address bar, then tap Userscripts. The script should be listed and active.",
         "tipLabel": "Tip:", "tipText": "If you don't see the flag change, refresh the page. The script runs automatically on Twitter/X.",
         "stepMargin": "right", "noteBorder": "left", "noteRadius": "0 10px 10px 0"
+      },
+      "userscriptInstructions": {
+        "file": "userscript-instructions.html",
+        "homeUrl": "/",
+        "backText": "← Back to home",
+        "pageTitle": "Userscript Installation",
+        "pageSubtitle": "How to install Restore Iran Flag using a userscript manager",
+        "step1Num": "1", "step2Num": "2", "step3Num": "3",
+        "installManager": "Install the extension",
+        "installScript": "Install the script",
+        "confirm": "Confirm installation",
+        "clickBelow": "Click the button below and the userscript manager will open automatically.",
+        "downloadBtn": "Install Userscript",
+        "tampermonkeyInstall": "Install <a href=\"https://www.tampermonkey.net/\" target=\"_blank\">Tampermonkey</a> from your browser's extension store. Available for Chrome, Firefox, Edge, Safari, and Opera.",
+        "tampermonkeyConfirm": "Tampermonkey will show an installation page. Click \"Install\" to add the script.",
+        "violentmonkeyInstall": "Install <a href=\"https://violentmonkey.github.io/\" target=\"_blank\">Violentmonkey</a> from your browser's extension store. Available for Chrome, Firefox, and Edge.",
+        "violentmonkeyConfirm": "Violentmonkey will show a confirmation dialog. Click \"Confirm installation\" to add the script.",
+        "greasemonkeyInstall": "Install <a href=\"https://www.greasespot.net/\" target=\"_blank\">Greasemonkey</a> from Firefox Add-ons. Greasemonkey is Firefox-only.",
+        "greasemonkeyConfirm": "Greasemonkey will show an installation prompt. Click \"Install\" to add the script.",
+        "tipLabel": "Tip:", "tipText": "After installation, visit twitter.com or x.com and refresh the page. The script runs automatically.",
+        "stepMargin": "right", "noteBorder": "left", "noteRadius": "0 10px 10px 0"
       }
     },
     "fa": {
@@ -130,6 +151,27 @@
         "step5Num": "۵", "step5Title": "فعال‌سازی", "step5Text": "سافاری را باز کنید، به <a href=\"https://x.com\" target=\"_blank\">x.com</a> یا <a href=\"https://twitter.com\" target=\"_blank\">twitter.com</a> بروید. روی آیکون پازل در نوار آدرس بزنید، سپس Userscripts را انتخاب کنید.",
         "tipLabel": "نکته:", "tipText": "اگر تغییر پرچم را نمی‌بینید، صفحه را رفرش کنید. اسکریپت به صورت خودکار در توییتر/ایکس اجرا می‌شود.",
         "stepMargin": "left", "noteBorder": "right", "noteRadius": "10px 0 0 10px"
+      },
+      "userscriptInstructions": {
+        "file": "userscript-instructions-fa.html",
+        "homeUrl": "/index-fa.html",
+        "backText": "→ بازگشت به صفحه اصلی",
+        "pageTitle": "نصب یوزراسکریپت",
+        "pageSubtitle": "نحوه نصب بازگردانی پرچم ایران با استفاده از مدیریت یوزراسکریپت",
+        "step1Num": "۱", "step2Num": "۲", "step3Num": "۳",
+        "installManager": "نصب افزونه",
+        "installScript": "نصب اسکریپت",
+        "confirm": "تایید نصب",
+        "clickBelow": "روی دکمه زیر کلیک کنید و مدیریت یوزراسکریپت به صورت خودکار باز می‌شود.",
+        "downloadBtn": "نصب یوزراسکریپت",
+        "tampermonkeyInstall": "<a href=\"https://www.tampermonkey.net/\" target=\"_blank\">Tampermonkey</a> را از فروشگاه افزونه‌های مرورگر خود نصب کنید. برای کروم، فایرفاکس، اج، سافاری و اپرا موجود است.",
+        "tampermonkeyConfirm": "Tampermonkey صفحه نصب را نشان می‌دهد. روی \"Install\" کلیک کنید.",
+        "violentmonkeyInstall": "<a href=\"https://violentmonkey.github.io/\" target=\"_blank\">Violentmonkey</a> را از فروشگاه افزونه‌های مرورگر خود نصب کنید. برای کروم، فایرفاکس و اج موجود است.",
+        "violentmonkeyConfirm": "Violentmonkey دیالوگ تایید را نشان می‌دهد. روی \"Confirm installation\" کلیک کنید.",
+        "greasemonkeyInstall": "<a href=\"https://www.greasespot.net/\" target=\"_blank\">Greasemonkey</a> را از افزونه‌های فایرفاکس نصب کنید. Greasemonkey فقط برای فایرفاکس است.",
+        "greasemonkeyConfirm": "Greasemonkey پیام نصب را نشان می‌دهد. روی \"Install\" کلیک کنید.",
+        "tipLabel": "نکته:", "tipText": "پس از نصب، به twitter.com یا x.com بروید و صفحه را رفرش کنید. اسکریپت به صورت خودکار اجرا می‌شود.",
+        "stepMargin": "left", "noteBorder": "right", "noteRadius": "10px 0 0 10px"
       }
     },
     "ar": {
@@ -182,6 +224,27 @@
         "step4Num": "٤", "step4Title": "تحميل السكريبت", "step4Text": "قم بتحميل ملف السكريبت الخاص بنا واحفظه في المجلد الذي حددته في الخطوة ٣.", "downloadBtn": "تحميل السكريبت",
         "step5Num": "٥", "step5Title": "التفعيل", "step5Text": "افتح سفاري، اذهب إلى <a href=\"https://x.com\" target=\"_blank\">x.com</a> أو <a href=\"https://twitter.com\" target=\"_blank\">twitter.com</a>. اضغط على أيقونة اللغز في شريط العنوان، ثم اضغط على Userscripts.",
         "tipLabel": "ملاحظة:", "tipText": "إذا لم ترَ تغيير العلم، قم بتحديث الصفحة. يعمل السكريبت تلقائياً على تويتر/إكس.",
+        "stepMargin": "left", "noteBorder": "right", "noteRadius": "10px 0 0 10px"
+      },
+      "userscriptInstructions": {
+        "file": "userscript-instructions-ar.html",
+        "homeUrl": "/index-ar.html",
+        "backText": "→ العودة إلى الصفحة الرئيسية",
+        "pageTitle": "تثبيت السكريبت",
+        "pageSubtitle": "كيفية تثبيت استعادة علم إيران باستخدام مدير السكريبتات",
+        "step1Num": "١", "step2Num": "٢", "step3Num": "٣",
+        "installManager": "تثبيت الإضافة",
+        "installScript": "تثبيت السكريبت",
+        "confirm": "تأكيد التثبيت",
+        "clickBelow": "اضغط على الزر أدناه وسيفتح مدير السكريبتات تلقائياً.",
+        "downloadBtn": "تثبيت السكريبت",
+        "tampermonkeyInstall": "قم بتثبيت <a href=\"https://www.tampermonkey.net/\" target=\"_blank\">Tampermonkey</a> من متجر إضافات متصفحك. متوفر لكروم وفايرفوكس وإيدج وسفاري وأوبرا.",
+        "tampermonkeyConfirm": "سيعرض Tampermonkey صفحة التثبيت. اضغط على \"Install\" لإضافة السكريبت.",
+        "violentmonkeyInstall": "قم بتثبيت <a href=\"https://violentmonkey.github.io/\" target=\"_blank\">Violentmonkey</a> من متجر إضافات متصفحك. متوفر لكروم وفايرفوكس وإيدج.",
+        "violentmonkeyConfirm": "سيعرض Violentmonkey نافذة تأكيد. اضغط على \"Confirm installation\" لإضافة السكريبت.",
+        "greasemonkeyInstall": "قم بتثبيت <a href=\"https://www.greasespot.net/\" target=\"_blank\">Greasemonkey</a> من إضافات فايرفوكس. Greasemonkey لفايرفوكس فقط.",
+        "greasemonkeyConfirm": "سيعرض Greasemonkey رسالة تثبيت. اضغط على \"Install\" لإضافة السكريبت.",
+        "tipLabel": "ملاحظة:", "tipText": "بعد التثبيت، قم بزيارة twitter.com أو x.com وقم بتحديث الصفحة. يعمل السكريبت تلقائياً.",
         "stepMargin": "left", "noteBorder": "right", "noteRadius": "10px 0 0 10px"
       }
     }

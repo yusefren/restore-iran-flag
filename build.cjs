@@ -6,6 +6,7 @@ const archiver = require('archiver');
 const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 const template = fs.readFileSync('template.html', 'utf8');
 const safariTemplate = fs.readFileSync('safari-instructions-template.html', 'utf8');
+const userscriptTemplate = fs.readFileSync('userscript-instructions-template.html', 'utf8');
 
 // Create dist folder
 if (!fs.existsSync('dist')) fs.mkdirSync('dist');
@@ -17,8 +18,9 @@ function buildPage(lang, t) {
     .map(l => `<a href="${l.file}"${l.code === lang ? ' class="active"' : ''}>${l.label}</a>`)
     .join('\n      ');
 
-  // Get Safari URL for this language
+  // Get language-specific URLs
   const safariUrl = t.safariInstructions ? `/${t.safariInstructions.file}` : data.platforms.safari.storeUrl;
+  const userscriptUrl = t.userscriptInstructions ? `/${t.userscriptInstructions.file}` : data.platforms.userscript.storeUrl;
 
   const platformsJson = JSON.stringify(
     Object.fromEntries(
@@ -26,7 +28,7 @@ function buildPage(lang, t) {
         name: t.platforms[key].name,
         icon: p.icon,
         description: t.platforms[key].description,
-        storeUrl: key === 'safari' ? safariUrl : p.storeUrl,
+        storeUrl: key === 'safari' ? safariUrl : key === 'userscript' ? userscriptUrl : p.storeUrl,
         storeName: t.platforms[key].storeName
       }])
     ),
@@ -62,6 +64,19 @@ function buildSafariPage(lang, t) {
   return Mustache.render(safariTemplate, view);
 }
 
+// Build Userscript instructions page
+function buildUserscriptPage(lang, t) {
+  const us = t.userscriptInstructions;
+  const view = {
+    ...us,
+    lang: t.lang,
+    dir: t.dir,
+    fontFamily: t.fontFamily,
+    heading: t.heading
+  };
+  return Mustache.render(userscriptTemplate, view);
+}
+
 // Build all language versions
 data.languages.forEach(({ code, file }) => {
   const t = data.i18n[code];
@@ -74,6 +89,13 @@ data.languages.forEach(({ code, file }) => {
     const safariHtml = buildSafariPage(code, t);
     fs.writeFileSync(`dist/${t.safariInstructions.file}`, safariHtml);
     console.log(`Built: dist/${t.safariInstructions.file}`);
+  }
+
+  // Build Userscript instructions page
+  if (t.userscriptInstructions) {
+    const userscriptHtml = buildUserscriptPage(code, t);
+    fs.writeFileSync(`dist/${t.userscriptInstructions.file}`, userscriptHtml);
+    console.log(`Built: dist/${t.userscriptInstructions.file}`);
   }
 });
 
