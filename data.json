@@ -14,7 +14,7 @@
     },
     "safari": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/safari/safari.svg",
-      "storeUrl": "https://apps.apple.com/app/userscripts/id1463298887"
+      "storeUrl": "/safari-instructions.html"
     },
     "android": {
       "icon": "https://upload.wikimedia.org/wikipedia/commons/3/31/Android_robot_head.svg",

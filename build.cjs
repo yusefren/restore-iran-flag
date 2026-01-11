@@ -60,6 +60,7 @@ fs.cpSync('userscript', 'dist/userscript', { recursive: true });
 fs.cpSync('og-image.svg', 'dist/og-image.svg');
 fs.cpSync('googlef1e2c57d719af19b.html', 'dist/googlef1e2c57d719af19b.html');
 fs.cpSync('privacy-policy.html', 'dist/privacy-policy.html');
+fs.cpSync('safari-instructions.html', 'dist/safari-instructions.html');
 console.log('Copied: assets');
 
 // Create extension ZIPs
