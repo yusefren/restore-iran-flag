@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.zip
+.DS_Store
+Thumbs.db
+nul
+.claude/
+.wrangler/
+screenshot.png
+screenshot2.png

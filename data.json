@@ -1,0 +1,160 @@
+{
+  "platforms": {
+    "chrome": {
+      "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/chrome/chrome.svg",
+      "storeUrl": "#chrome-store-placeholder"
+    },
+    "firefox": {
+      "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/firefox/firefox.svg",
+      "storeUrl": "#firefox-store-placeholder"
+    },
+    "edge": {
+      "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/edge/edge.svg",
+      "storeUrl": "#edge-store-placeholder"
+    },
+    "safari": {
+      "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/safari/safari.svg",
+      "storeUrl": "https://apps.apple.com/app/userscripts/id1463298887"
+    },
+    "android": {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/3/31/Android_robot_head.svg",
+      "storeUrl": "#"
+    },
+    "userscript": {
+      "icon": "https://cdn.simpleicons.org/tampermonkey/00485B",
+      "storeUrl": "userscript/restore-iran-flag.user.js"
+    }
+  },
+  "i18n": {
+    "en": {
+      "lang": "en",
+      "dir": "ltr",
+      "fontFamily": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "title": "Restore Iran Flag - Browser Extension",
+      "heading": "Restore Iran Flag",
+      "badgeText": "Browser Extension",
+      "heroTitle": "Flags Belong to Nations, Not Platforms",
+      "heroSubtitle": "X changed Iran's flag emoji without consent. This extension restores the official flag that represents people of Iran.",
+      "metaDescription": "X changed Iran's flag without consent. This browser extension restores the official Iranian flag on Twitter/X. Available for Chrome, Firefox, Edge, Safari.",
+      "ctaText": "Install Extension",
+      "paganLabel": "Unauthorized Flag",
+      "realLabel": "Official Flag",
+      "arrow": "→",
+      "whyTitle": "Why This Matters",
+      "whySubtitle": "A platform should not decide what a nation's flag looks like",
+      "quoteText": "The official flag of Iran is the Islamic Republic flag. Just because a group of people demand an old, outdated flag, you change it? What kind of ridiculous management is this? Tomorrow if thousands ask to change the American flag, will you change it too?",
+      "quoteAuthor": "@AryJeay on X",
+      "featuresTitle": "Features",
+      "feature1Title": "Instant Replacement",
+      "feature1Desc": "Automatically replaces the unauthorized flag with the official Iranian flag across all of Twitter/X.",
+      "feature2Title": "Privacy First",
+      "feature2Desc": "No data collection, no tracking. The extension works entirely locally in your browser.",
+      "feature3Title": "Works Everywhere",
+      "feature3Desc": "Available for Chrome, Firefox, Edge, Safari, and as a userscript for other browsers.",
+      "otherPlatforms": "Other platforms",
+      "tweetTitle": "See It In Action",
+      "footer": "Open source on",
+      "github": "GitHub",
+      "installFor": "Install for",
+      "platforms": {
+        "chrome": { "name": "Chrome", "description": "Available on Chrome Web Store", "storeName": "Add to Chrome" },
+        "firefox": { "name": "Firefox", "description": "Available on Firefox Add-ons", "storeName": "Add to Firefox" },
+        "edge": { "name": "Edge", "description": "Available on Edge Add-ons", "storeName": "Add to Edge" },
+        "safari": { "name": "Safari", "description": "Use Userscripts app from App Store", "storeName": "Get Userscripts App" },
+        "android": { "name": "Android", "description": "Use Firefox or Kiwi Browser", "storeName": "View Instructions" },
+        "userscript": { "name": "Other Browsers", "description": "Use Tampermonkey or Violentmonkey", "storeName": "Download Userscript" }
+      }
+    },
+    "fa": {
+      "lang": "fa",
+      "dir": "rtl",
+      "fontFamily": "'Vazirmatn', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "title": "بازگردانی پرچم ایران - افزونه مرورگر",
+      "heading": "بازگردانی پرچم ایران",
+      "badgeText": "افزونه مرورگر",
+      "heroTitle": "پرچم‌ها متعلق به ملت‌ها هستند، نه پلتفرم‌ها",
+      "heroSubtitle": "X پرچم ایران را بدون رضایت تغییر داد. این افزونه پرچم رسمی را که نماینده ۹۰ میلیون ایرانی است بازمی‌گرداند.",
+      "metaDescription": "X پرچم ایران را بدون رضایت تغییر داد. این افزونه پرچم رسمی ایران را در توییتر/ایکس بازمی‌گرداند. برای کروم، فایرفاکس، اج و سافاری.",
+      "ctaText": "نصب افزونه",
+      "paganLabel": "پرچم طاغوتی",
+      "realLabel": "پرچم رسمی",
+      "arrow": "←",
+      "whyTitle": "چرا این مهم است",
+      "whySubtitle": "یک پلتفرم نباید تصمیم بگیرد که پرچم یک ملت چگونه باشد",
+      "quoteText": "پرچم رسمی ایران، پرچم جمهوری اسلامی است. فقط به این دلیل که گروهی از مردم یک پرچم قدیمی و منسوخ را می‌خواهند، آن را تغییر می‌دهید؟ این چه نوع مدیریت مسخره‌ای است؟ فردا اگر هزاران نفر بخواهند پرچم آمریکا را تغییر دهند، آیا آن را هم تغییر می‌دهید؟",
+      "quoteAuthor": "@AryJeay در X",
+      "featuresTitle": "ویژگی‌ها",
+      "feature1Title": "جایگزینی فوری",
+      "feature1Desc": "به طور خودکار پرچم غیرمجاز را با پرچم رسمی ایران در سراسر توییتر/ایکس جایگزین می‌کند.",
+      "feature2Title": "حریم خصوصی در اولویت",
+      "feature2Desc": "بدون جمع‌آوری داده، بدون ردیابی. افزونه کاملاً به صورت محلی در مرورگر شما کار می‌کند.",
+      "feature3Title": "همه جا کار می‌کند",
+      "feature3Desc": "برای کروم، فایرفاکس، اج، سافاری و به عنوان یوزراسکریپت برای سایر مرورگرها در دسترس است.",
+      "otherPlatforms": "سایر پلتفرم‌ها",
+      "tweetTitle": "مشاهده عملکرد",
+      "footer": "متن‌باز در",
+      "github": "گیت‌هاب",
+      "installFor": "نصب برای",
+      "platforms": {
+        "chrome": { "name": "کروم", "description": "در فروشگاه وب کروم موجود است", "storeName": "افزودن به کروم" },
+        "firefox": { "name": "فایرفاکس", "description": "در افزونه‌های فایرفاکس موجود است", "storeName": "افزودن به فایرفاکس" },
+        "edge": { "name": "اج", "description": "در افزونه‌های اج موجود است", "storeName": "افزودن به اج" },
+        "safari": { "name": "سافاری", "description": "از اپلیکیشن Userscripts استفاده کنید", "storeName": "دریافت Userscripts" },
+        "android": { "name": "اندروید", "description": "از فایرفاکس یا Kiwi Browser استفاده کنید", "storeName": "مشاهده راهنما" },
+        "userscript": { "name": "سایر مرورگرها", "description": "از Tampermonkey یا Violentmonkey استفاده کنید", "storeName": "دانلود اسکریپت" }
+      }
+    },
+    "ar": {
+      "lang": "ar",
+      "dir": "rtl",
+      "fontFamily": "'Noto Sans Arabic', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "title": "استعادة علم إيران - إضافة المتصفح",
+      "heading": "استعادة علم إيران",
+      "badgeText": "إضافة المتصفح",
+      "heroTitle": "الأعلام ملك للأمم، لا للمنصات",
+      "heroSubtitle": "قامت X بتغيير رمز علم إيران دون موافقة. هذه الإضافة تستعيد العلم الرسمي ",
+      "metaDescription": "قامت X بتغيير علم إيران دون موافقة. هذه الإضافة تستعيد العلم الرسمي لإيران على تويتر/إكس. متوفر لكروم وفايرفوكس وإيدج وسفاري.",
+      "ctaText": "تثبيت الإضافة",
+      "paganLabel": "علم وثني",
+      "realLabel": "العلم الرسمي",
+      "arrow": "←",
+      "whyTitle": "لماذا هذا مهم",
+      "whySubtitle": "لا ينبغي لمنصة أن تقرر شكل علم أمة",
+      "quoteText": "العلم الرسمي لإيران هو علم الجمهورية الإسلامية. فقط لأن مجموعة من الناس يطالبون بعلم قديم ومهجور، تقومون بتغييره؟ أي نوع من الإدارة السخيفة هذه؟ غداً إذا طالب الآلاف بتغيير العلم الأمريكي، هل ستغيرونه أيضاً؟",
+      "quoteAuthor": "@AryJeay على X",
+      "featuresTitle": "المميزات",
+      "feature1Title": "استبدال فوري",
+      "feature1Desc": "يستبدل تلقائياً العلم غير المصرح به بعلم إيران الرسمي في جميع أنحاء تويتر/إكس.",
+      "feature2Title": "الخصوصية أولاً",
+      "feature2Desc": "لا جمع للبيانات، لا تتبع. الإضافة تعمل بالكامل محلياً في متصفحك.",
+      "feature3Title": "يعمل في كل مكان",
+      "feature3Desc": "متوفر لكروم وفايرفوكس وإيدج وسفاري وكسكريبت للمتصفحات الأخرى.",
+      "otherPlatforms": "منصات أخرى",
+      "tweetTitle": "شاهده أثناء العمل",
+      "footer": "مفتوح المصدر على",
+      "github": "جيت‌هاب",
+      "installFor": "تثبيت لـ",
+      "platforms": {
+        "chrome": { "name": "كروم", "description": "متوفر في متجر كروم الإلكتروني", "storeName": "أضف إلى كروم" },
+        "firefox": { "name": "فايرفوكس", "description": "متوفر في إضافات فايرفوكس", "storeName": "أضف إلى فايرفوكس" },
+        "edge": { "name": "إيدج", "description": "متوفر في إضافات إيدج", "storeName": "أضف إلى إيدج" },
+        "safari": { "name": "سفاري", "description": "استخدم تطبيق Userscripts", "storeName": "احصل على Userscripts" },
+        "android": { "name": "أندرويد", "description": "استخدم فايرفوكس أو Kiwi Browser", "storeName": "عرض التعليمات" },
+        "userscript": { "name": "متصفحات أخرى", "description": "استخدم Tampermonkey أو Violentmonkey", "storeName": "تحميل السكريبت" }
+      }
+    }
+  },
+  "assets": {
+    "realFlag": "/chrome-extension/flag.svg",
+    "paganFlag": "https://abs.twimg.com/responsive-web/client-web/1f1ee-1f1f7.4a41f56a.svg",
+    "tweetUrl": "https://twitter.com/AryJeay/status/2009598110692151460",
+    "githubUrl": "https://github.com/yusefren/restore-iran-flag",
+    "siteUrl": "https://restoreiranflag.com",
+    "ogImage": "https://restoreiranflag.com/og-image.png"
+  },
+  "languages": [
+    { "code": "en", "label": "English", "file": "index.html" },
+    { "code": "fa", "label": "فارسی", "file": "index-fa.html" },
+    { "code": "ar", "label": "العربية", "file": "index-ar.html" }
+  ]
+}
