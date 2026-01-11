@@ -6,7 +6,7 @@
     },
     "firefox": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/firefox/firefox.svg",
-      "storeUrl": "#firefox-store-placeholder"
+      "storeUrl": "https://addons.mozilla.org/firefox/addon/restore-iran-flag-on-twitter/"
     },
     "edge": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/edge/edge.svg",
