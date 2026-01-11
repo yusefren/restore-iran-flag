@@ -22,7 +22,7 @@
     },
     "userscript": {
       "icon": "https://cdn.simpleicons.org/tampermonkey/00485B",
-      "storeUrl": "userscript/restore-iran-flag.user.js"
+      "storeUrl": "/userscript/restore-iran-flag.user.js"
     }
   },
   "i18n": {
@@ -62,7 +62,7 @@
         "edge": { "name": "Edge", "description": "Available on Edge Add-ons", "storeName": "Add to Edge" },
         "safari": { "name": "Safari", "description": "Use Userscripts app from App Store", "storeName": "Get Userscripts App" },
         "android": { "name": "Android", "description": "Use Firefox or Kiwi Browser", "storeName": "View Instructions" },
-        "userscript": { "name": "Other Browsers", "description": "Use Tampermonkey or Violentmonkey", "storeName": "Download Userscript" }
+        "userscript": { "name": "Other Browsers", "description": "Use Tampermonkey, Violentmonkey or Greasemonkey", "storeName": "Download Userscript" }
       }
     },
     "fa": {
@@ -101,7 +101,7 @@
         "edge": { "name": "اج", "description": "در افزونه‌های اج موجود است", "storeName": "افزودن به اج" },
         "safari": { "name": "سافاری", "description": "از اپلیکیشن Userscripts استفاده کنید", "storeName": "دریافت Userscripts" },
         "android": { "name": "اندروید", "description": "از فایرفاکس یا Kiwi Browser استفاده کنید", "storeName": "مشاهده راهنما" },
-        "userscript": { "name": "سایر مرورگرها", "description": "از Tampermonkey یا Violentmonkey استفاده کنید", "storeName": "دانلود اسکریپت" }
+        "userscript": { "name": "سایر مرورگرها", "description": "از Tampermonkey، Violentmonkey یا Greasemonkey استفاده کنید", "storeName": "دانلود اسکریپت" }
       }
     },
     "ar": {
@@ -140,7 +140,7 @@
         "edge": { "name": "إيدج", "description": "متوفر في إضافات إيدج", "storeName": "أضف إلى إيدج" },
         "safari": { "name": "سفاري", "description": "استخدم تطبيق Userscripts", "storeName": "احصل على Userscripts" },
         "android": { "name": "أندرويد", "description": "استخدم فايرفوكس أو Kiwi Browser", "storeName": "عرض التعليمات" },
-        "userscript": { "name": "متصفحات أخرى", "description": "استخدم Tampermonkey أو Violentmonkey", "storeName": "تحميل السكريبت" }
+        "userscript": { "name": "متصفحات أخرى", "description": "استخدم Tampermonkey أو Violentmonkey أو Greasemonkey", "storeName": "تحميل السكريبت" }
       }
     }
   },
