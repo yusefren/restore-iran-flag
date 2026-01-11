@@ -1,4 +1,4 @@
-# 🇮🇷 Restore Iran Flag
+# <img src="chrome-extension/flag.svg" width="28" height="28" alt="Iran Flag"> Restore Iran Flag
 
 X (formerly Twitter) changed the Iran flag emoji to a wrong flag without any official request. This browser extension restores the official flag of Iran.
 
@@ -8,7 +8,7 @@ X (formerly Twitter) changed the Iran flag emoji to a wrong flag without any off
 
 ## Install
 
-- **Chrome**: [Chrome Web Store](#)
+- **Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/jfdjlhofanmjkdedfnldcflengbhpkff)
 - **Firefox**: [Firefox Add-ons](#)
 - **Edge**: [Edge Add-ons](#)
 - **Safari**: Use [Userscripts](https://apps.apple.com/app/userscripts/id1463298887) app
