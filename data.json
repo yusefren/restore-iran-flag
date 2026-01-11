@@ -60,9 +60,23 @@
         "chrome": { "name": "Chrome", "description": "Available on Chrome Web Store", "storeName": "Add to Chrome" },
         "firefox": { "name": "Firefox", "description": "Available on Firefox Add-ons", "storeName": "Add to Firefox" },
         "edge": { "name": "Edge", "description": "Available on Edge Add-ons", "storeName": "Add to Edge" },
-        "safari": { "name": "Safari", "description": "Use Userscripts app from App Store", "storeName": "Get Userscripts App" },
+        "safari": { "name": "Safari", "description": "Use Userscripts app from App Store", "storeName": "View Instructions" },
         "android": { "name": "Android", "description": "Use Firefox or Kiwi Browser", "storeName": "View Instructions" },
         "userscript": { "name": "Other Browsers", "description": "Use Tampermonkey, Violentmonkey or Greasemonkey", "storeName": "Download Userscript" }
+      },
+      "safariInstructions": {
+        "file": "safari-instructions.html",
+        "homeUrl": "/",
+        "backText": "← Back to home",
+        "safariTitle": "Safari / iOS Instructions",
+        "safariSubtitle": "How to install Restore Iran Flag on Safari",
+        "step1Num": "1", "step1Title": "Install Userscripts App", "step1Text": "Download the free <a href=\"https://apps.apple.com/app/userscripts/id1463298887\" target=\"_blank\">Userscripts app</a> from the App Store. It works on iPhone, iPad, and Mac.",
+        "step2Num": "2", "step2Title": "Enable the Extension", "step2Text": "<strong>On iPhone/iPad:</strong> Go to Settings → Safari → Extensions → Userscripts → Enable it and allow on \"All Websites\"", "step2TextMac": "<strong>On Mac:</strong> Go to Safari → Settings → Extensions → Enable Userscripts",
+        "step3Num": "3", "step3Title": "Set Script Directory", "step3Text": "Open the Userscripts app and tap \"Set Userscripts Directory\". Create or select a folder (e.g., in iCloud Drive or On My iPhone).",
+        "step4Num": "4", "step4Title": "Download the Script", "step4Text": "Download our userscript file and save it to the directory you set in step 3.", "downloadBtn": "Download Userscript",
+        "step5Num": "5", "step5Title": "Activate", "step5Text": "Open Safari, go to <a href=\"https://x.com\" target=\"_blank\">x.com</a> or <a href=\"https://twitter.com\" target=\"_blank\">twitter.com</a>. Tap the puzzle icon in the address bar, then tap Userscripts. The script should be listed and active.",
+        "tipLabel": "Tip:", "tipText": "If you don't see the flag change, refresh the page. The script runs automatically on Twitter/X.",
+        "stepMargin": "right", "noteBorder": "left", "noteRadius": "0 10px 10px 0"
       }
     },
     "fa": {
@@ -102,6 +116,20 @@
         "safari": { "name": "سافاری", "description": "از اپلیکیشن Userscripts استفاده کنید", "storeName": "دریافت Userscripts" },
         "android": { "name": "اندروید", "description": "از فایرفاکس یا Kiwi Browser استفاده کنید", "storeName": "مشاهده راهنما" },
         "userscript": { "name": "سایر مرورگرها", "description": "از Tampermonkey، Violentmonkey یا Greasemonkey استفاده کنید", "storeName": "دانلود اسکریپت" }
+      },
+      "safariInstructions": {
+        "file": "safari-instructions-fa.html",
+        "homeUrl": "/index-fa.html",
+        "backText": "→ بازگشت به صفحه اصلی",
+        "safariTitle": "راهنمای سافاری / iOS",
+        "safariSubtitle": "نحوه نصب بازگردانی پرچم ایران در سافاری",
+        "step1Num": "۱", "step1Title": "نصب اپلیکیشن Userscripts", "step1Text": "اپلیکیشن رایگان <a href=\"https://apps.apple.com/app/userscripts/id1463298887\" target=\"_blank\">Userscripts</a> را از App Store دانلود کنید. برای آیفون، آیپد و مک کار می‌کند.",
+        "step2Num": "۲", "step2Title": "فعال‌سازی افزونه", "step2Text": "<strong>در آیفون/آیپد:</strong> به تنظیمات ← سافاری ← افزونه‌ها ← Userscripts بروید ← آن را فعال کنید و \"همه وب‌سایت‌ها\" را اجازه دهید", "step2TextMac": "<strong>در مک:</strong> به Safari ← Settings ← Extensions بروید ← Userscripts را فعال کنید",
+        "step3Num": "۳", "step3Title": "تنظیم پوشه اسکریپت", "step3Text": "اپلیکیشن Userscripts را باز کنید و روی \"Set Userscripts Directory\" بزنید. یک پوشه ایجاد یا انتخاب کنید (مثلاً در iCloud Drive یا On My iPhone).",
+        "step4Num": "۴", "step4Title": "دانلود اسکریپت", "step4Text": "فایل اسکریپت ما را دانلود کنید و در پوشه‌ای که در مرحله ۳ تنظیم کردید ذخیره کنید.", "downloadBtn": "دانلود اسکریپت",
+        "step5Num": "۵", "step5Title": "فعال‌سازی", "step5Text": "سافاری را باز کنید، به <a href=\"https://x.com\" target=\"_blank\">x.com</a> یا <a href=\"https://twitter.com\" target=\"_blank\">twitter.com</a> بروید. روی آیکون پازل در نوار آدرس بزنید، سپس Userscripts را انتخاب کنید.",
+        "tipLabel": "نکته:", "tipText": "اگر تغییر پرچم را نمی‌بینید، صفحه را رفرش کنید. اسکریپت به صورت خودکار در توییتر/ایکس اجرا می‌شود.",
+        "stepMargin": "left", "noteBorder": "right", "noteRadius": "10px 0 0 10px"
       }
     },
     "ar": {
@@ -141,6 +169,20 @@
         "safari": { "name": "سفاري", "description": "استخدم تطبيق Userscripts", "storeName": "احصل على Userscripts" },
         "android": { "name": "أندرويد", "description": "استخدم فايرفوكس أو Kiwi Browser", "storeName": "عرض التعليمات" },
         "userscript": { "name": "متصفحات أخرى", "description": "استخدم Tampermonkey أو Violentmonkey أو Greasemonkey", "storeName": "تحميل السكريبت" }
+      },
+      "safariInstructions": {
+        "file": "safari-instructions-ar.html",
+        "homeUrl": "/index-ar.html",
+        "backText": "→ العودة إلى الصفحة الرئيسية",
+        "safariTitle": "تعليمات سفاري / iOS",
+        "safariSubtitle": "كيفية تثبيت استعادة علم إيران على سفاري",
+        "step1Num": "١", "step1Title": "تثبيت تطبيق Userscripts", "step1Text": "قم بتحميل تطبيق <a href=\"https://apps.apple.com/app/userscripts/id1463298887\" target=\"_blank\">Userscripts</a> المجاني من App Store. يعمل على آيفون وآيباد وماك.",
+        "step2Num": "٢", "step2Title": "تفعيل الإضافة", "step2Text": "<strong>على آيفون/آيباد:</strong> اذهب إلى الإعدادات ← سفاري ← الإضافات ← Userscripts ← قم بتفعيله واسمح لـ \"جميع المواقع\"", "step2TextMac": "<strong>على ماك:</strong> اذهب إلى Safari ← Settings ← Extensions ← قم بتفعيل Userscripts",
+        "step3Num": "٣", "step3Title": "تعيين مجلد السكريبت", "step3Text": "افتح تطبيق Userscripts واضغط على \"Set Userscripts Directory\". أنشئ أو اختر مجلداً (مثلاً في iCloud Drive أو On My iPhone).",
+        "step4Num": "٤", "step4Title": "تحميل السكريبت", "step4Text": "قم بتحميل ملف السكريبت الخاص بنا واحفظه في المجلد الذي حددته في الخطوة ٣.", "downloadBtn": "تحميل السكريبت",
+        "step5Num": "٥", "step5Title": "التفعيل", "step5Text": "افتح سفاري، اذهب إلى <a href=\"https://x.com\" target=\"_blank\">x.com</a> أو <a href=\"https://twitter.com\" target=\"_blank\">twitter.com</a>. اضغط على أيقونة اللغز في شريط العنوان، ثم اضغط على Userscripts.",
+        "tipLabel": "ملاحظة:", "tipText": "إذا لم ترَ تغيير العلم، قم بتحديث الصفحة. يعمل السكريبت تلقائياً على تويتر/إكس.",
+        "stepMargin": "left", "noteBorder": "right", "noteRadius": "10px 0 0 10px"
       }
     }
   },
