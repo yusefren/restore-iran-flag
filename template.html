@@ -444,38 +444,10 @@
       padding: 60px 0;
     }
 
-    .platforms-toggle {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-
-    .platforms-toggle a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: color 0.2s;
-    }
-
-    .platforms-toggle a:hover {
-      color: var(--text-primary);
-    }
-
-    .platforms-toggle svg {
-      transition: transform 0.3s;
-    }
-
     .platforms-grid {
-      display: none;
+      display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-    }
-
-    .platforms-grid.show {
-      display: grid;
     }
 
     .platform-card {
@@ -702,13 +674,8 @@
 
   <section class="other-platforms">
     <div class="container">
-      <div class="platforms-toggle">
-        <a onclick="togglePlatforms()" id="toggle-link">
-          <span>{{otherPlatforms}}</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </a>
+      <div class="section-header">
+        <h2>{{otherPlatforms}}</h2>
       </div>
       <div class="platforms-grid" id="platforms-grid"></div>
     </div>
@@ -740,6 +707,7 @@
       const ua = navigator.userAgent;
       if (ua.includes('Firefox')) return 'firefox';
       if (ua.includes('Edg')) return 'edge';
+      if (ua.includes('Kiwi')) return 'chrome';  // Kiwi Browser supports Chrome extensions
       if (ua.includes('Safari') && !ua.includes('Chrome')) return 'safari';
       if (ua.includes('Android')) return 'android';
       return 'chrome';
@@ -771,12 +739,6 @@
             <p>${p.description}</p>
             <a href="${p.storeUrl}" class="btn" target="_blank">${p.storeName}</a>
           </div>`).join('');
-    }
-
-    function togglePlatforms() {
-      const grid = document.getElementById('platforms-grid');
-      grid.classList.toggle('show');
-      document.querySelector('#toggle-link svg').style.transform = grid.classList.contains('show') ? 'rotate(180deg)' : '';
     }
 
     const detected = detectPlatform();
