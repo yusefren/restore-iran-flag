@@ -2,7 +2,7 @@
   "platforms": {
     "chrome": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/chrome/chrome.svg",
-      "storeUrl": "#chrome-store-placeholder"
+      "storeUrl": "https://chrome.google.com/webstore/detail/jfdjlhofanmjkdedfnldcflengbhpkff"
     },
     "firefox": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/firefox/firefox.svg",
@@ -10,7 +10,7 @@
     },
     "edge": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/edge/edge.svg",
-      "storeUrl": "#edge-store-placeholder"
+      "storeUrl": "https://chrome.google.com/webstore/detail/jfdjlhofanmjkdedfnldcflengbhpkff"
     },
     "safari": {
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/browser-logos/75.0.0/safari/safari.svg",
