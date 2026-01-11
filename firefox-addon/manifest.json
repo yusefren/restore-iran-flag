@@ -32,5 +32,9 @@
       "id": "restore-iran-flag@example.com",
       "strict_min_version": "57.0"
     }
+  },
+  "data_collection_permissions": {
+    "required": false,
+    "disclosure_text": "This extension does not collect, store, or transmit any user data."
   }
 }
