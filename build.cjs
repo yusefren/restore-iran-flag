@@ -7,6 +7,7 @@ const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 const template = fs.readFileSync('template.html', 'utf8');
 const safariTemplate = fs.readFileSync('safari-instructions-template.html', 'utf8');
 const userscriptTemplate = fs.readFileSync('userscript-instructions-template.html', 'utf8');
+const androidTemplate = fs.readFileSync('android-instructions-template.html', 'utf8');
 
 // Create dist folder
 if (!fs.existsSync('dist')) fs.mkdirSync('dist');
@@ -21,6 +22,14 @@ function buildPage(lang, t) {
   // Get language-specific URLs
   const safariUrl = t.safariInstructions ? `/${t.safariInstructions.file}` : data.platforms.safari.storeUrl;
   const userscriptUrl = t.userscriptInstructions ? `/${t.userscriptInstructions.file}` : data.platforms.userscript.storeUrl;
+  const androidUrl = t.androidInstructions ? `/${t.androidInstructions.file}` : data.platforms.android.storeUrl;
+
+  const getStoreUrl = (key, p) => {
+    if (key === 'safari') return safariUrl;
+    if (key === 'userscript') return userscriptUrl;
+    if (key === 'android') return androidUrl;
+    return p.storeUrl;
+  };
 
   const platformsJson = JSON.stringify(
     Object.fromEntries(
@@ -28,7 +37,7 @@ function buildPage(lang, t) {
         name: t.platforms[key].name,
         icon: p.icon,
         description: t.platforms[key].description,
-        storeUrl: key === 'safari' ? safariUrl : key === 'userscript' ? userscriptUrl : p.storeUrl,
+        storeUrl: getStoreUrl(key, p),
         storeName: t.platforms[key].storeName
       }])
     ),
@@ -77,6 +86,19 @@ function buildUserscriptPage(lang, t) {
   return Mustache.render(userscriptTemplate, view);
 }
 
+// Build Android instructions page
+function buildAndroidPage(lang, t) {
+  const android = t.androidInstructions;
+  const view = {
+    ...android,
+    lang: t.lang,
+    dir: t.dir,
+    fontFamily: t.fontFamily,
+    heading: t.heading
+  };
+  return Mustache.render(androidTemplate, view);
+}
+
 // Build all language versions
 data.languages.forEach(({ code, file }) => {
   const t = data.i18n[code];
@@ -96,6 +118,13 @@ data.languages.forEach(({ code, file }) => {
     const userscriptHtml = buildUserscriptPage(code, t);
     fs.writeFileSync(`dist/${t.userscriptInstructions.file}`, userscriptHtml);
     console.log(`Built: dist/${t.userscriptInstructions.file}`);
+  }
+
+  // Build Android instructions page
+  if (t.androidInstructions) {
+    const androidHtml = buildAndroidPage(code, t);
+    fs.writeFileSync(`dist/${t.androidInstructions.file}`, androidHtml);
+    console.log(`Built: dist/${t.androidInstructions.file}`);
   }
 });
 
