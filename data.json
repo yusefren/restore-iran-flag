@@ -341,8 +341,8 @@
     "paganFlag": "https://abs.twimg.com/responsive-web/client-web/1f1ee-1f1f7.4a41f56a.svg",
     "tweetUrl": "https://twitter.com/AryJeay/status/2009598110692151460",
     "githubUrl": "https://github.com/yusefren/restore-iran-flag",
-    "siteUrl": "https://restoreiranflag.com",
-    "ogImage": "https://restoreiranflag.com/og-image.png"
+    "siteUrl": "https://restoir.yusef.ren",
+    "ogImage": "https://restoir.yusef.ren/og-image.png"
   },
   "languages": [
     { "code": "en", "label": "English", "file": "index.html" },
