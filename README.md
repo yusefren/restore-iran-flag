@@ -8,7 +8,7 @@ X (formerly Twitter) changed the Iran flag emoji to a wrong flag without any off
 
 - **Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/jfdjlhofanmjkdedfnldcflengbhpkff)
 - **Firefox**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/restore-iran-flag-on-twitter/)
-- **Edge**: [Edge Add-ons](#)
+- **Edge**: [Chrome Web Store](https://chrome.google.com/webstore/detail/jfdjlhofanmjkdedfnldcflengbhpkff) (Edge supports Chrome extensions)
 - **Safari**: Use [Userscripts](https://apps.apple.com/app/userscripts/id1463298887) app
 - **Other browsers**: Install the [userscript](userscript/restore-iran-flag.user.js) via Tampermonkey/Violentmonkey
 
