@@ -10,23 +10,23 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{heroTitle}}">
   <meta property="og:description" content="{{metaDescription}}">
-  <meta property="og:image" content="{{ogImage}}">
-  <meta property="og:url" content="{{siteUrl}}">
+  <meta property="og:image" content="{{{ogImage}}}">
+  <meta property="og:url" content="{{{siteUrl}}}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{heroTitle}}">
   <meta name="twitter:description" content="{{metaDescription}}">
-  <meta name="twitter:image" content="{{ogImage}}">
+  <meta name="twitter:image" content="{{{ogImage}}}">
 
   <link rel="icon" type="image/svg+xml" href="/chrome-extension/flag.svg">
   <link rel="apple-touch-icon" href="/chrome-extension/icon128.png">
 
   <!-- Alternate languages -->
-  <link rel="alternate" hreflang="en" href="{{siteUrl}}/index.html">
-  <link rel="alternate" hreflang="fa" href="{{siteUrl}}/index-fa.html">
-  <link rel="alternate" hreflang="ar" href="{{siteUrl}}/index-ar.html">
-  <link rel="alternate" hreflang="x-default" href="{{siteUrl}}/index.html">
+  <link rel="alternate" hreflang="en" href="{{{siteUrl}}}/index.html">
+  <link rel="alternate" hreflang="fa" href="{{{siteUrl}}}/index-fa.html">
+  <link rel="alternate" hreflang="ar" href="{{{siteUrl}}}/index-ar.html">
+  <link rel="alternate" hreflang="x-default" href="{{{siteUrl}}}/index.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -595,7 +595,7 @@
     <div class="flag-comparison">
       <div class="flag-item">
         <div class="flag-wrapper rejected">
-          <img src="{{paganFlag}}" alt="{{paganLabel}}">
+          <img src="{{{paganFlag}}}" alt="{{paganLabel}}">
         </div>
         <div class="flag-label rejected">{{paganLabel}}</div>
       </div>
@@ -692,7 +692,7 @@
       <h2>{{tweetTitle}}</h2>
       <div class="tweet-container">
         <blockquote class="twitter-tweet" data-theme="dark">
-          <a href="{{tweetUrl}}"></a>
+          <a href="{{{tweetUrl}}}"></a>
         </blockquote>
       </div>
     </div>
@@ -700,7 +700,7 @@
 
   <footer>
     <div class="container">
-      <p>{{footer}} <a href="{{githubUrl}}" target="_blank">{{github}}</a></p>
+      <p>{{footer}} <a href="{{{githubUrl}}}" target="_blank">{{github}}</a></p>
     </div>
   </footer>
 
