@@ -1,0 +1,58 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: node build.cjs
+
+      - name: Upload Chrome extension
+        uses: actions/upload-artifact@v4
+        with:
+          name: chrome-extension
+          path: dist/chrome-extension.zip
+
+      - name: Upload Firefox addon
+        uses: actions/upload-artifact@v4
+        with:
+          name: firefox-addon
+          path: dist/firefox-addon.zip
+
+      - name: Upload landing pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: landing-pages
+          path: dist/*.html
+
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/chrome-extension.zip
+            dist/firefox-addon.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
