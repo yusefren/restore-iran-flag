@@ -1,8 +1,9 @@
-name: Build
+name: Build and Release
 
 on:
   push:
     branches: [main]
+    tags: ['v*']
   pull_request:
     branches: [main]
 
@@ -29,19 +30,26 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: chrome-extension
-          path: chrome-extension.zip
+          path: dist/chrome-extension.zip
 
       - name: Upload Firefox addon
         uses: actions/upload-artifact@v4
         with:
           name: firefox-addon
-          path: firefox-addon.zip
+          path: dist/firefox-addon.zip
 
       - name: Upload landing pages
         uses: actions/upload-artifact@v4
         with:
           name: landing-pages
-          path: |
-            index.html
-            index-fa.html
-            index-ar.html
+          path: dist/*.html
+
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/chrome-extension.zip
+            dist/firefox-addon.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
